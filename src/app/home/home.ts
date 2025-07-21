@@ -30,7 +30,13 @@ export class Home {
 
 
   ngOnInit(): void {
-   
+   this.messages.push({
+        content : '¡Hola! Soy tu asistente especializado en la Guardia Civil. \n'+
+         '¿Tienes dudas sobre oposiciones, requisitos, trámites o procedimientos? \n' +
+         'Pregúntame lo que necesites. Estoy aquí para ayudarte.',
+        from: 'assistant',
+        date:  this.datePipe.transform(new Date(), 'dd/MM/yyyy HH:mm:ss') || ''
+      });
   }
 
    ngAfterViewChecked() {  
