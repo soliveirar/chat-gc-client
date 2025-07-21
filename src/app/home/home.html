@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div #scrollbar class="col-lg-12 chat-view">
+                <div *ngFor="let msg of messages;"
+                    [ngClass]="msg.from === 'user' ? 'messages myMessages' : 'messages otherMessages'">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div [ngClass]="'msg'">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                       {{msg.content}}
+                                    </div>
+                                    <div class="col-lg-4 date">
+                                        {{msg.date}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 custom-search">
+            <form>
+                <input id="message" name="message" type="text" class="custom-search-input" [(ngModel)]="messageText"  >
+                <button type="submit" class="custom-search-botton" (click)="sendMessage()">
+                    <span i18n>Enviar</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

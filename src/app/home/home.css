@@ -1,0 +1,82 @@
+.chat-view {
+    width: 80vw;
+    height: 85vh;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 30px 20px;
+    position: relative;
+    margin-bottom: 0;
+    scrollbar-color: red;
+    scrollbar-base-color: #b0b0b0;
+}
+
+
+.messages {
+    margin-bottom: 10px;
+}
+
+.messages .msg {
+    border: 1px solid;
+    padding: 3px 10px;
+    width: 40%;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.messages .msg .date {
+    font-size: 10px;
+    color: #b0b0b0;
+}
+
+.messages .msg span {
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.otherMessages .msg {
+    background-color: #d0f3ee;
+    border-color: #bae1db;
+}
+
+.myMessages .msg {
+    position: relative;
+    float: right;
+    background-color: #e4e4e4;
+    border-color: #dadada;
+}
+
+
+.custom-search {
+    position: relative;
+    padding: 0;
+    width: 80vw;
+    margin-left: 20px;
+}
+
+.custom-search-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+    padding: 10px 100px 10px 20px;
+    line-height: 2;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.custom-search-botton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    border: 0;
+    background: #f5bc00;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    padding: 0 10px;
+    border-radius: 100px;
+    z-index: 2;
+}
