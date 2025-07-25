@@ -3,12 +3,17 @@
   padding: 10px 20px;
   color: white;
   border-bottom: 4px solid #f5bc00; /* acento verde claro */
+  height: 100px;
+}
+
+.app-header img{
+  height: 100px;
 }
 
 .header-content {
   display: flex;
   align-items: center;
-}
+}n
 
 .app-logo {
   width: 50px;

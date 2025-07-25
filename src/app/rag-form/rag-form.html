@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row form-container">
+        <form [formGroup]="metadataForm" (ngSubmit)="onSubmit()" enctype="multipart/form-data">
+            <label>Origen:</label>
+            <input formControlName="origin" />
+
+            <label>Categoría:</label>
+            <input formControlName="category" />
+
+            <label>Confidencialidad:</label>
+            <input formControlName="confidenciality" />
+
+            <label>Autor:</label>
+            <input formControlName="author" />
+
+            <label>Fuente:</label>
+            <input formControlName="source" />
+
+            <label>Referencia:</label>
+            <input formControlName="reference" />
+
+            <label>Fecha de publicación:</label>
+            <input type="date" formControlName="publicationDate" />
+
+            <label>Última actualización:</label>
+            <input type="date" formControlName="lastUpdated" />
+
+            <label>Documento PDF:</label>
+            <input type="file" (change)="onFileSelected($event)" accept="application/pdf" />
+            <div></div>
+            <button type="submit" [disabled]="!metadataForm.valid || !selectedFile">Enviar</button>
+        </form>
+    </div>
+</div>
