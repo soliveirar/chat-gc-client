@@ -52,3 +52,26 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.msg{
+    border: 2px solid #b7b6ba;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #e3e2e6;
+    color: #7c7b7b;
+    font-weight: 600;
+    font-size: 16px;
+}
+.msg.info{
+  border-color: #d3e4fb;
+  background-color: #e7f1ff;
+  color: #7aadf2;
+}
+
+.msg.error{
+  border-color: #f5e2b4;
+  background-color: #ffefc9;
+  color: #d6ad49;
+}
